@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../connexion/connexion.css">
     <title>Connexion</title>
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -23,6 +24,49 @@
 </head>
 <body>
     <div id="header"></div>
+    <h1> Connexion </h1>
+
+    <div class="Connexion">
+        <fieldset>
+        <h3> Connectez vous</h3>
+        <form method="POST" action="monprogramme.php">
+            <label for="Votre Pseudo">Nom </label>
+            <input type="text" name="nom" placeholder="Mettre votre nom" minlength="2" maxlength="20" id="nom"/><br>
+            <label for="mail"> Email <span>*</span></label>
+            <input type="text" name="mail" placeholder="Mettre votre mail"id="email"/><br>
+            <input type="submit" value="Envoyer" />
+        </fieldset>
+    </div>
+
+    <div class="Inscription">
+        <fieldset>
+        <h3> Inscription</h3>
+        <form method="POST" action="monprogramme.php">
+            <label for="Nom">Prénom </label>
+            <input type="text" name="nom" placeholder="Mettre votre Prénom" minlength="2" maxlength="20" id="nom"/><br>
+
+            <label for="Prénom">Nom </label>
+            <input type="text" name="nom" placeholder="Mettre votre nom" minlength="2" maxlength="20" id="nom"/><br>
+
+
+            <label for="mail"> Email </label>
+            <input type="text" name="mail" placeholder="Mettre votre mail"id="email"/><br>
+            
+            <label for="mail"> Mot de Passe </label>
+            <input type="password" placeholder="Mot de passe"
+
+            <input type="reset" value="Effacer"/>
+            <input type="submit" value="Envoyer" />
+        </fieldset>
+    </div>
+
+
+    
     <div id="footer"></div>
+
+
+
+
+
 </body>
 </html>
