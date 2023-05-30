@@ -1,14 +1,24 @@
 html{
     margin: auto;
+    width: 100%;
     background-color:#1e1e1e;
     color: #e6e6e6;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact;
 }
 li{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: #e6e6e6;
+}
+a:visited{
+    color: #e6e6e6;
 }

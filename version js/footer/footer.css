@@ -1,0 +1,14 @@
+footer{
+    background-color: #e6e6e667;
+    color: #1e1e1e; 
+}
+footer ul{    
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 0.75em;
+}
