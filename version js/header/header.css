@@ -1,3 +1,20 @@
-ul{
-    list-style: none;
+#menu_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-bottom: 2px solid #eb5a23;    
 }
+#menu_header ul{
+    list-style: none; 
+    text-align: right; 
+}
+#menu_header li{
+    padding-top: 0.25em;
+}
+#menu_header img{
+    width: 7.5em;
+    height: 7.5em;
+}
+
