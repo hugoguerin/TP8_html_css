@@ -1,45 +1,56 @@
-#actus, #banniere {
+#jeux_attendus, #img_banniere {
     display: none;
 }
 
+#page {
+    margin-left: 2%;
+}
+
 #corps h1 {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
     text-align: center;
+    font-size: 35px;
 }
 
 #corps {
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: #2E2D2D;
+    border-top: 3px solid #1e1e1e;
+    border-bottom: 3px solid #eb5a23;
+    border-radius: 5%;
+    margin-right: 2.5%;
 }
 
-#article {
+#imageetpara {
     font-family: Arial;
+    font-size: 20px;
     text-indent: 50px;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-row: 2;
     align-items: center;
     text-align: justify;
-    margin: 10px;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    justify-items: center;
 }
 
-#article img {
-    width: 100%;
+#imageetpara img {
+    width: 80%;
     border: 1px solid #eb5a23;
-    margin-right: 20px;
-}
-
-#article p {
-    margin-right: 10px;
-    margin-left: 5px;
+    margin-left: 3%;
 }
 
 #seconde_partie {
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: Arial;
+    font-size: 15px;
     text-indent: 50px;
     grid-column: 1 / 3;
     grid-row: 2;
     text-align: justify;
-    margin: 15px;
 }
 
 #note {
@@ -62,13 +73,6 @@
     border-radius: 50%;
 }
 
-#corps {
-    background-color: #2E2D2D;
-    border-top: 3px solid #1e1e1e;
-    border-bottom: 3px solid #eb5a23;
-    border-radius: 5%;
-}
-
 #total {
     border-top: 3px solid #eb5a23 ;
     border-radius: 5%;
@@ -87,10 +91,27 @@
         flex-direction: column;
     }
 
-    #article {
+    #page {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    #imageetpara {
         text-indent: 50px;
         display: flex;
         flex-direction: row-reverse;
+        font-size: 35px;
+    }
+
+    #imageetpara img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    #imageetpara p {
+        margin-right: 3%;
     }
 
     #total {
@@ -104,40 +125,27 @@
         font-family: Arial;
         text-indent: 50px;
         text-align: justify;
-        margin: 15px;
+        font-size: 25px;
+        margin: 3%;
     }
 
-    #article img {
-        max-width: 400px;
-        max-height: 400px;
-    }
-
-    #actus {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        padding: 10px;
-        width: 500px;
-        height: 600px;
-        border: 1px solid #eb5a23;
-        background-color: #101010;
-        text-align: center;
-    }
-
-    #titreactu {
-        background-color: #eb5a23;
-    }
-
-    .img {
-        margin: 19px;
-        border: 1px solid #eb5a23;
-        width: 100%;
+    #img_banniere {
+        border: 2px solid #eb5a23;
+        width: 94%;
         height: 300px;
+        margin: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #jeux_attendus{
+        display: block;
     }
 
     #note {
         width: 90%;
         position: absolute;
-        top: 32%;
+        top: 20.5%;
+        left: -5%;
     }
 } 
