@@ -76,6 +76,10 @@ h1{
     text-align: right;
 }
 
+#header #accueil{
+    color: #eb5a23;
+}
+
 @media  all and (min-width: 1080px) {
   
     #main :first-child div{
@@ -107,11 +111,12 @@ h1{
         flex-direction: column;
     }
 
-    #main #actu{
+    #main #jeux_attendus{
         width: 25%;
-        height: 600px;
-        background-color: red;
-        margin: 10px;
+    }
+
+    #main #jeux_attendus h3{
+        width: 100%;
     }
 
     #main {

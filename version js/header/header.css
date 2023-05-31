@@ -19,3 +19,14 @@
     height: 7.5em;
 }
 
+@media all and (min-width:720px){
+    #menu_header ul{
+        display: flex;
+    }
+    #menu_header li{
+        padding: 1em 1em 1em 1em;
+        background-color: #101010;
+    }
+
+
+}
