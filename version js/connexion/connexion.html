@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../connexion/connexion.css" >
     <title>Connexion</title>
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -23,6 +24,70 @@
 </head>
 <body>
     <div id="header"></div>
+    <body>
+    <h1> Connexion </h1>
+
+    <div class="Connexion">
+        <fieldset>
+            <legend>Connectez vous</legend>
+        <form method="POST" action="monprogramme.php">
+            <label for="Votre Pseudo">Nom </label>
+            <input type="text" name="nom" placeholder="Mettre votre nom" minlength="2" maxlength="20" id="nom"/><br>
+            <label for="mail"> Email <span>*</span></label>
+            <input type="text" name="mail" placeholder="Mettre votre mail"id="email"/><br>
+            <input type="submit" value="Envoyer" />
+        </fieldset>
+    </div>
+
+  
+
+    <div class="Inscription">
+        <fieldset>
+            <legend>Inscription</legend>
+        <form method="POST" action="monprogramme.php">
+            <label for="Nom">Prénom </label>
+            <input type="text" name="nom" placeholder="Mettre votre Prénom" minlength="2" maxlength="20" id="nom"/><br>
+
+            <label for="Prénom">Nom </label>
+            <input type="text" name="nom" placeholder="Mettre votre nom" minlength="2" maxlength="20" id="nom"/><br>
+
+            <label for="Prénom">Pseudo </label>
+            <input type="text" name="pseudo" placeholder="Mettre votre Pseudo" minlength="2" maxlength="20" id="nom"/><br>
+
+
+            <label for="Date">Date de Naissance</label>
+            <input type="date"/> <br>
+
+            <label for="Date">Sexe</label>
+            <input type="checkbox" id="checkbox"/><label for="checkbox">fille</label>
+            <input type="checkbox" id="checkbox2"/><label for="checkbox2">garçon</label> <br>
+
+
+            <label for="mail"> Email </label>
+            <input type="text" name="mail" placeholder="Mettre votre mail"id="email"/><br>
+            
+            <label for="mot de passe"> Mot de Passe </label>
+            <input type="password" placeholder="Mot de passe"> <br>
+
+            <label for="news">Recevoir la newsletter</label>
+            <input type="radio" id="radio1" name="radio" value="radio1"/><label for="radio1">oui</label>
+            <input type="radio" id="radio2" name="radio" value="radio2"/><label for="radio2">non</label> <br>
+           
+
+           <input type="reset" value="Effacer"/> 
+            <input type="submit" value="Envoyer" />
+
+        </fieldset>
+    </body>
+    </div>
+
+
+    
     <div id="footer"></div>
+
+
+
+
+
 </body>
 </html>
