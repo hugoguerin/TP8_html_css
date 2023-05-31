@@ -1,0 +1,133 @@
+
+#titre{
+    margin-top: 1em;
+    text-align: center;
+}
+#news_semaines{
+    margin: 0.5em 0.5em 1em 1em;
+    border: 2px solid #eb5a23;
+    padding: 0em 1em 1em 1em;
+}
+
+legend{
+    padding: 0em 0.5em 0 0.5em;
+}
+
+.article{
+    background-color: #101010;
+    height: 7.5em;
+    margin-top: 1em;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.article img{
+    width: 5em;
+    height: 7.5em;
+    object-fit: cover; 
+}
+.article h2{
+    color: #eb5a23;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+.align_verti{
+    margin: 0 0.5em 0 0.5em;
+}
+.article p{
+    margin-top: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-align: justify;
+}
+
+
+
+#autres_news{
+    margin-top: 2em;
+}
+#autres_news .slide img{
+    height: 12.5em;
+    width: 12.5em;
+    object-fit: cover; 
+}
+#autres_news .slides{
+    height: 12.5em;
+    display: flex;
+    overflow: hidden;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-250%);
+    }
+}
+#autres_news .slide{
+    animation: slide 20s infinite linear alternate;
+}
+
+#autres_news h3{
+    position: absolute;
+    margin-top: 0.1em;
+    margin-left: 0.25em;
+    color: white;
+    filter: drop-shadow(0 0 0.25em black);
+    font-size: 85%;
+    text-decoration: underline;
+}
+
+#autres_news .fleches{
+    margin: 1em 2em 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+#autres_news #fleche_gauche img, #autres_news #fleche_droite img{
+    opacity: 0.75; 
+    filter: drop-shadow(0 0 0.25em black);
+}
+#autres_news #fleche_gauche img{
+    transform: scaleX(-1);
+}
+#autres_news .fleches input{
+    position: absolute;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    scale: 4;
+    z-index: 1;
+    opacity: 0.5;
+    display: none;
+}
+
+#jeux_attendus{
+    display: none;
+}
+#header #actualites{
+    color: #eb5a23;
+}
+
+@media screen and (min-width: 1024px){
+    #body{
+        display: flex;
+    }
+    #jeux_attendus{
+        display: block;
+        background-color: #101010;
+        width: 25%;
+        margin: 1em 1em 1em 0.5em;
+    }
+    #news_semaines{
+        width: 75%;
+    }
+    
+}
