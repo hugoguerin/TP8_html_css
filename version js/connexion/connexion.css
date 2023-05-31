@@ -2,3 +2,18 @@ h1{
     font-size: 150%;
     text-align: center;
 }
+
+body{
+    white-space: inherit;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+fieldset{
+    border: 2px solid #eb5a23; 
+}
+
+@media screen and (max-width:1280px)
+{
+    
+}
