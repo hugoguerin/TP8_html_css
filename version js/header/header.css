@@ -4,7 +4,8 @@
     align-items: center;
     margin-right: 1em;
     margin-left: 1em;
-    border-bottom: 2px solid #eb5a23;    
+    border-bottom: 2px solid #eb5a23;   
+    width: 100%; 
 }
 #menu_header ul{
     list-style: none; 
