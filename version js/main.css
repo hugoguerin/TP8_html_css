@@ -8,6 +8,7 @@ html{
     color: #e6e6e6;
     margin: auto;
 }
+
 body{
     width: 100%;
 }
@@ -17,6 +18,7 @@ h1, h2, h3, h4, h5, h6, legend{
 }
 h2, legend{
     font-size: 100%;
+
 }
 li{
     font-family: Arial;
@@ -34,4 +36,8 @@ a:link{
 }
 a:visited{
     color: #e6e6e6;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
