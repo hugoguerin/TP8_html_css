@@ -47,7 +47,9 @@ legend{
     text-align: justify;
 }
 
-
+#news_semaines h2, #news_semaines legend{
+    font-size: 100%;
+}
 
 #autres_news{
     margin-top: 2em;
