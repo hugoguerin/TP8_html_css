@@ -1,0 +1,74 @@
+#actus, #banniere {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+
+#article {
+    font-family: Arial;
+    text-indent: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-row: 2;
+    align-items: center;
+    text-align: justify;
+    margin: 10px;
+}
+
+#article img {
+    width: 100%;
+    border: 1px solid #eb5a23;
+    margin-right: 20px;
+}
+
+#article p {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#seconde_partie {
+    font-family: Arial;
+    text-indent: 50px;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    text-align: justify;
+    margin: 15px;
+}
+
+#note {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+}
+
+#note p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+    width: 50px;
+    border: 5px solid #eb5a23;
+    background-color: #eb5a23;
+    border-radius: 50%;
+}
+
+#corps {
+    background-color: #2E2D2D;
+    border-top: 3px solid #1e1e1e;
+    border-bottom: 3px solid #eb5a23;
+    border-radius: 5%;
+}
+
+#total {
+    border-top: 3px solid #eb5a23 ;
+    border-radius: 5%;
+    padding-top: 3%;
+}
+
+#header {
+    padding-bottom: 3%;
+}
