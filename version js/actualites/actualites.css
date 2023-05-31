@@ -124,12 +124,12 @@ legend{
     }
     #jeux_attendus{
         display: block;
-        background-color: #101010;
         width: 25%;
-        margin: 1em 1em 1em 0.5em;
+        margin: 1em 5em 1em 0.5em;
     }
     #news_semaines{
         width: 75%;
+        margin-left: 5em;
     }
     
 }
