@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+#corps {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #article {
     font-family: Arial;
     text-indent: 50px;

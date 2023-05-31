@@ -7,3 +7,22 @@
 #jeux_attendus{
     background-color: #101010;
 }
+
+#jeux_attendus_images img{
+    width: 90%;
+    margin:5%;
+    object-fit: cover;
+}
+
+#jeux_attendus_images p{
+   text-align: center;
+   padding-bottom: 5%;
+}
+
+#jeux_attendus_images div{
+    margin:5%;
+    background-color: #2e2d2d;
+    border-radius: 5%;
+    border-bottom:#eb5a23 1px solid;
+
+}
