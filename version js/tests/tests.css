@@ -1,0 +1,131 @@
+html {
+   display: flex;
+   max-width: fit-content;
+}
+h1, h3  {
+   text-align: center;
+   margin-top: 10px;
+}
+
+h4 {
+   position: relative;
+  text-align: center;
+ 
+}
+
+h1 {
+   text-decoration: underline;
+}
+
+.test {
+   display: flex;
+  justify-content: center;
+}
+
+#menu_header ul{
+   margin-right:50px;
+}
+
+iframe {
+   width: 100%;
+   height: 600px;
+   border-color: #eb5a23;
+}
+
+.diablo {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   justify-content: center;
+}
+
+.street {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   justify-self: center;
+}
+
+
+img {
+   justify-content: space-evenly;
+   max-width: 500px;
+   height: 500px;
+   flex-wrap: wrap;
+   margin: 10px;
+  }
+
+  .screens  {
+   text-align: center;
+   margin-top: 10px;
+   text-decoration: underline;
+  }
+
+  .jeux { 
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 0.25fr 1fr 1fr;
+     width: 250px;
+   height: 600px;
+   border: 2px solid #eb5a23 ;
+   position: relative;
+   justify-content: space-between;
+   margin-left: 20px;
+  }
+
+  p {
+   margin: 10px;
+  }
+
+
+
+  @media screen and (max-width: 1080px) {
+   #header {
+      max-width: 100%;
+         }
+
+         .jeux {
+            display: none;
+         }
+
+         #menu_header {
+            display: flex;
+            justify-content: flex-start;
+            
+         }
+         #menu_header ul{
+            list-style: none; 
+            text-align: left; 
+        }
+
+        h1, h3 {
+         text-align: left;
+         margin-left: 10px;
+         margin-top: 5px;
+      }
+
+      iframe {
+         max-width: 100%;
+         max-height: 400px;
+         margin-left: 10px;
+         
+      }
+
+        img {
+         justify-content: space-evenly;
+         max-width: 300px;
+         height: 300px;
+         flex-wrap: wrap;
+         margin: 5px;
+        }
+
+        .screens  {
+         text-align: left;
+         padding: 5px;
+         margin-left: 10px;
+        }
+   
+        #footer {
+         max-width: 100%;
+        }
+}
