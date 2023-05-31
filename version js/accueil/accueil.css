@@ -53,7 +53,7 @@ h1{
     grid-column: 1 /span 2;
     max-width: 90%;
     max-height: 90%;
-    border-radius: 5%;
+    border-radius: 2%;
     margin: auto;
 }
 
@@ -80,6 +80,10 @@ h1{
     color: #eb5a23;
 }
 
+#jeux_attendus{
+    display: none;
+}
+
 @media  all and (min-width: 1080px) {
   
     #accueil div{
@@ -97,6 +101,8 @@ h1{
     #accueil div img{
         grid-row: 1 /span 3;
         grid-column: 1;
+        object-fit: cover;    
+        min-height: 90%;  
     }
 
     #accueil div #debutarticle {
@@ -113,6 +119,7 @@ h1{
 
     #main #jeux_attendus{
         width: 25%;
+        height: fit-content;
     }
 
     #main #jeux_attendus h3{
@@ -123,5 +130,9 @@ h1{
         display: flex;
         justify-content: space-between;
     }
-   
+
+    #jeux_attendus{
+        opacity: 1;
+        display: block;
+    }
 }
