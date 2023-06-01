@@ -155,25 +155,5 @@ legend{
     #autres_news .slide{
         animation: slide 15s infinite linear alternate;
     }
-    
-    
-    /* #jeux_attendus_images{
-        min-width: 15em;
-    }
-    #jeux_attendus_images div{
-        width: 10em;
-        text-align: center;
-        padding: 1em;
-        padding-bottom: 0.5em;
-    }
-    #jeux_attendus_images img{
-        width: 10em;
-        height: 7.5em;
-        margin: 0;        
-    }
-    
-    #jeux_attendus_images p{
-        padding:0;
-        margin-top: 0.25em;
-     } */
+  
 }
