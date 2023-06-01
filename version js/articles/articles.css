@@ -1,11 +1,9 @@
+/* Désactivation des actus et de la bannière sur portable */
 #jeux_attendus, #img_banniere {
     display: none;
 }
 
-#page {
-    margin-left: 2%;
-}
-
+/* Ajustement du titre de l'article */
 #corps h1 {
     padding-top: 25px;
     padding-left: 25px;
@@ -13,8 +11,16 @@
     padding-bottom: 5px;
     text-align: center;
     font-size: 35px;
+    color: #ebebeb;
+    transition: color 0.3s linear;
 }
 
+/* Ajout de la transition au survol du titre */
+#corps h1:hover {
+    color: #eb5a23;
+}
+
+/* Placement et ajustement du cadre de l'article */
 #corps {
     background-color: #2E2D2D;
     border-top: 3px solid #1e1e1e;
@@ -23,6 +29,7 @@
     margin-right: 2.5%;
 }
 
+/* Placement et ajustement du premier paragraphe et de l'image */
 #imageetpara {
     font-family: Arial;
     font-size: 20px;
@@ -36,12 +43,14 @@
     justify-items: center;
 }
 
+/* Ajustement de l'image */
 #imageetpara img {
     width: 80%;
     border: 1px solid #eb5a23;
     margin-left: 3%;
 }
 
+/* Ajustement du second paragraphe */
 #seconde_partie {
     margin-left: 3%;
     margin-right: 3%;
@@ -53,12 +62,14 @@
     text-align: justify;
 }
 
+/* Positionnement de la note sur portable */
 #note {
     width: fit-content;
     position: relative;
     right: -80%;
 }
 
+/* Ajutement du contenu de la note */
 #note p {
     display: flex;
     align-items: center;
@@ -76,18 +87,20 @@
     margin-bottom: 10%;
 }
 
+/* Ajustement des bords de l'article dans sa globalité */
 #total {
     border-top: 3px solid #eb5a23 ;
     border-radius: 5%;
     padding-top: 3%;
 }
 
+/* Ajout d'un padding sous le header */
 #header {
     padding-bottom: 3%;
 }
 
 
-
+/* Adaptabilité pour les ordinateurs (>1080p) */
 @media only screen and (min-width:1080px) {
     #corps {
         display: flex;
@@ -133,6 +146,7 @@
         margin: 3%;
     }
 
+    /* Activation de la bannière sur PC et ajustements */
     #img_banniere {
         border: 2px solid #eb5a23;
         width: 94%;
@@ -142,10 +156,12 @@
         justify-content: center;
     }
 
+    /* Activation des actus sur PC */
     #jeux_attendus{
         display: block;
     }
 
+    /* Déplacement de la note sur PC */
     #note {
         position: absolute;
         top: 31.6%;
