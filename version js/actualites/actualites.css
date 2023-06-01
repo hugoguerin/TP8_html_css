@@ -30,7 +30,7 @@ legend{
     color: #eb5a23;
     margin-top: 0.5em;
     margin-left: 0.5em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
 }
 .align_verti{
     margin: 0 0.5em 0 0.5em;
@@ -71,7 +71,7 @@ legend{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-200%);
+        transform: translateX(-175%);
     }
 }
 #autres_news .slide{
