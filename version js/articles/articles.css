@@ -54,8 +54,9 @@
 }
 
 #note {
-    display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    width: fit-content;
+    position: relative;
+    right: -80%;
 }
 
 #note p {
@@ -146,9 +147,8 @@
     }
 
     #note {
-        width: 90%;
         position: absolute;
-        top: 27.5%;
-        left: -5%;
+        top: 31.6%;
+        left: 67%;
     }
 } 
