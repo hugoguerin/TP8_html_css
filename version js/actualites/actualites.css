@@ -71,11 +71,11 @@ legend{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-175%);
+        transform: translateX(-750%);
     }
 }
 #autres_news .slide{
-    animation: slide 15s infinite linear alternate;
+    animation: slide 40s infinite linear alternate;
 }
 
 #autres_news h3{
@@ -143,7 +143,19 @@ legend{
     #jeux_attendus_images p{
         padding:0;
         margin: 0.25em 0em 0.25em 0em;
-     }
+    }
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-175%);
+        }
+    }
+    #autres_news .slide{
+        animation: slide 15s infinite linear alternate;
+    }
+    
     
     /* #jeux_attendus_images{
         min-width: 15em;
