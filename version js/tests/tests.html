@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../jeux_attendus/jeux_attendus.css">
     <link rel="stylesheet" href="tests.css">
     <title>Tests</title>
     <script
@@ -18,36 +19,33 @@
         $(function(){
         $("#header").load("../header/header.html"); 
         $("#footer").load("../footer/footer.html"); 
+        $("#jeux_attendus").load("../jeux_attendus/jeux_attendus.html"); 
         });
     </script> 
     
 </head>
 <body>
     <div id="header"></div>
-
-    <h1>Tests Vidéos</h1><br>
+<div id="plswork"><h1>Tests Vidéos</h1><br>
     <h3>The Lord of the Rings: Gollum</h3><br>
     <div class="test"> 
         <iframe  src="https://www.youtube.com/embed/_wnHpSMK_Eg" title="LE SEIGNEUR DES ANNEAUX GOLLUM - Gameplay FR"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-        <div class="jeux">
-            <h4>Jeux attendus</h4>
-            <a href="blank"><img class="diablo" src="diablo4.PNG" alt="diablo4">Diablo 4</a>
-            <a href="blank"><img class="street" src="streetfighter.PNG" alt="streetfighter">Street Fighter</a>
-            
-        </div>
-
+        <div id="jeux_attendus"></div> 
     </div>
+</div>
+
+   
        
            
 
     <div class="screens">
         <h2>Screenshots</h2>
-        <img src="screen1.png" alt="">
-        <img src="screen2.PNG" alt="">
-        <img src="screen3.PNG" alt="">
+        <img class="screen" src="../../assets/screen1.PNG" alt="">
+        <img class="screen" src="../../assets/screen2.PNG" alt="">
+        <img class="screen" src="../../assets/screen3.PNG" alt="">
 
     </div>
+    
     <div id="footer"></div>
 </body>
 </html>

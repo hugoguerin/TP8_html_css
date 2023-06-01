@@ -1,0 +1,159 @@
+
+#titre{
+    margin-top: 1em;
+    text-align: center;
+}
+#news_semaines{
+    margin: 0.5em 0.5em 1em 1em;
+    border: 2px solid #eb5a23;
+    padding: 0em 1em 1em 1em;
+}
+
+legend{
+    padding: 0em 0.5em 0 0.5em;
+}
+
+.article{
+    background-color: #101010;
+    height: 10em;
+    margin-top: 1em;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.article img{
+    width: 7.5em;
+    height: 10em;
+    object-fit: cover; 
+}
+.article h2{
+    color: #eb5a23;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.align_verti{
+    margin: 0 0.5em 0 0.5em;
+}
+.article p{
+    margin-top: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-align: justify;
+}
+
+#news_semaines h2, #news_semaines legend{
+    font-size: 100%;
+}
+
+#autres_news{
+    margin-top: 2em;
+}
+#autres_news .slide img{
+    height: 12.5em;
+    width: 12.5em;
+    object-fit: cover; 
+}
+#autres_news .slides{
+    height: 12.5em;
+    display: flex;
+    overflow: hidden;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-750%);
+    }
+}
+#autres_news .slide{
+    animation: slide 40s infinite linear alternate;
+}
+
+#autres_news h3{
+    position: absolute;
+    margin-top: 0.1em;
+    margin-left: 0.25em;
+    color: white;
+    filter: drop-shadow(0 0 0.25em black);
+    font-size: 85%;
+    text-decoration: underline;
+}
+
+#autres_news .fleches{
+    margin: 1em 2em 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+#autres_news #fleche_gauche img, #autres_news #fleche_droite img{
+    opacity: 0.75; 
+    filter: drop-shadow(0 0 0.25em black);
+}
+#autres_news #fleche_gauche img{
+    transform: scaleX(-1);
+}
+#autres_news .fleches input{
+    position: absolute;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    scale: 4;
+    z-index: 1;
+    opacity: 0.5;
+    display: none;
+}
+
+#jeux_attendus{
+    display: none;
+}
+#header #actualites{
+    color: #eb5a23;
+}
+
+@media screen and (min-width: 1024px){
+    #body{
+        display: flex;
+    }
+    #jeux_attendus{
+        display: block;
+        margin: 1em 5em 1em 0.5em;
+    }
+    #news_semaines{
+        width: 75%;
+        margin-left: 5em;
+    }
+    #jeux_attendus_images div{       
+        text-align: center; 
+        margin: 1em;
+    }
+    #jeux_attendus_images img{
+        width: 12em;
+        height: 7.5em;
+        margin: 1em 1em 0em 1em;    
+        padding: 0;    
+    }
+    #jeux_attendus_images p{
+        padding:0;
+        margin: 0.25em 0em 0.25em 0em;
+    }
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-175%);
+        }
+    }
+    #autres_news .slide{
+        animation: slide 15s infinite linear alternate;
+    }
+  
+}

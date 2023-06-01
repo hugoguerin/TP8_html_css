@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../footer/footer.css">    
+    <link rel="stylesheet" href="../jeux_attendus/jeux_attendus.css">
+    <link rel="stylesheet" href="actualites.css">
     <title>Actualités</title>
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -15,14 +17,169 @@
     </script>
     <script> 
         $(function(){
-        $("#header").load("../header/header.html"); 
-        $("#footer").load("../footer/footer.html"); 
+            $("#header").load("../header/header.html"); 
+            $("#footer").load("../footer/footer.html"); 
+            $("#jeux_attendus").load("../jeux_attendus/jeux_attendus.html"); 
         });
     </script> 
     
 </head>
 <body>
     <div id="header"></div>
+
+    <div id="titre"><h1>Actualités</h1></div>    
+
+    <div id="body">
+         
+        <fieldset id="news_semaines">
+            <legend>Les dernières news</legend>  
+            <a href="">
+                <div class="article">                           
+                    <img alt="" src="https://play-lh.googleusercontent.com/8QnH9AhsRfhPott7REiFUXXJLRIxi8KMAP0mFAZpYgd44OTOCtScwXeb5oPe1E4eP4oF"> 
+                    <div class="align_verti">
+                        <h2>Goat Simulator</h2>         
+                        <p>Goat Simulator est la toute dernière technologie de simulation de chèvre, en proposant la dernière génération de simulation de chèvre pour VOUS. Vous n'avez plus à rêver d'être une chèvre, vos rêves sont enfin devenus réalités ! utilisez les ZQSD de votre clavier pour ré-écrire l'histoire.
+
+                            Concernant le gameplay, Goat Simulator a pour seul but de causer autant de dégâts que possible en étant une chèvre. Il a été comparé à un vieux jeu de skateboard,
+                            excepté qu'à la place d'être un skater, vous êtes une chèvre, et à la place de faire des figures, vous cassez des trucs. Détruisez des trucs avec du style, par exemple en faisant un salto arrière tout en donnant un coup de boule à un seau à travers une fenêtre, et vous gagnerez encore plus de points! Ou vous pourriez juste jeter un œil au Steam Workshop et créer vos propres chèvres, niveaux, missions, et plus encore ! Quand il s'agit de chèvres, le ciel n'est plus une limite, puisque vous pourrez probablement le dépasser et faire planter le jeu.</p>     
+                    </div>                
+                </div> 
+            </a>
+            <a href="">
+                <div class="article">                           
+                    <img alt="" src="https://gaming-cdn.com/images/products/8565/orig/lawn-mowing-simulator-pc-jeu-steam-europe-cover.jpg?v=1652775090"> 
+                    <div class="align_verti">
+                        <h2>Lawn Mowing Simulator</h2>         
+                        <p>Lawn Mowing Simulator est une simulation qui vous propose de vivre une authentique expérience de tondeur de gazon dans les plus belles campagnes anglaises. Vous pouvez prendre le contrôle de véritables tondeuses de constructeurs connus et développer votre propre entreprise de tonte.
+
+                            Lawn Mowing Simulator invite les joueurs à conduire des engins de tonte authentiques et un panel d'équipements prestigieux venu des plus grands fabricants comme Toro, SCAG ou encore STIGA. Pour cela, être un conducteur aguerri ne suffira pas, et il faudra diriger sa petite entreprise. Construisez votre local de A à Z, améliorez votre quartier général, engagez des employés, achetez des panneaux publicitaires et faites vous connaître pour gagner de plus en plus d'ampleur dans ce marché. </p>     
+                    </div>                
+                </div> 
+            </a>
+            <a href="../articles/articles.html">
+                <div class="article">                           
+                    <img alt="" src="https://www.jeuxactu.com/datas/jeux/w/a/warhammer-40000-space-marine-2/vn/warhammer-40000-space-ma-639655724549c.jpg"> 
+                    <div class="align_verti">
+                        <h2>Warhammer 40.000 Space Marine 2</h2>         
+                        <p>Depuis décembre dernier et les Game Awards 2022, Warhammer 40.000 Space Marine 2 s'était fait discret. On a bien eu des informations sur la belle édition collector, mais rien de bien concret à se mettre sous la dent. Mais fort heureusement, Focus Entertainment a décidé qu'il était temps de montrer ce que le jeu avait sous la pédale et force est de constater que l'approche plus action de cet épisode devrait séduire un nouveau public, notamment les fans de la série Gears of War. Parce que oui, on ressent fortement l'influence du AAA d'Epic Games, du temps où Gears of War comptait encore beaucoup pour eux. Caméra à l'épaule proche du personnage, soldat en armure bien massif (normal, c'est du Warhammer) et nuée d'ennemis insectes qu'il va falloir éliminer, on a évidemment l'impression de revivre certains moments du jeu vidéo passé, pour notre plus grand bonheur. Mais en plus de ces séquences de gunfight bien énervées, Warhammer 40.000 Space Marine 2 promet un système de combat au corps-à-corps lui aussi très agressif et efficace, permettant pas mal de mouvements et d'exécutions bien crades. On était déjà assez hype, on est désormais chaud bouillant.</p>     
+                    </div>                
+                </div> 
+            </a> 
+        </fieldset>
+
+        <div id="jeux_attendus"></div>         
+    </div>
+    
+    <div id="autres_news"> 
+        <div class="slides">
+            <div class="slide">
+                <a href="">
+                    <h3>FM2 3</h3>
+                    <img alt="" src="https://editors.dexerto.fr/wp-content/uploads/sites/2/2022/10/25/football-manager-2023-les-clubs-avec-les-plus-gros-budgets-de-transfert.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Gran Turismo 7</h3>
+                    <img alt="" src="https://image.api.playstation.com/vulcan/ap/rnd/202202/2806/wpHT6JXmOA9iECLZKRPRvt0U.png">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>GTA 6</h3>
+                    <img alt="" src="https://cdn-uploads.gameblog.fr/img/news/406695_632aeb4e614df.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Tekken 8</h3>
+                    <img alt="" src="https://image.api.playstation.com/vulcan/ap/rnd/202212/2009/04S9doVJzhHa0OE8o8wax88S.png">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>RDR 2</h3>
+                    <img alt="" src="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08519_00/12/i_3da1cf7c41dc7652f9b639e1680d96436773658668c7dc3930c441291095713b/i/icon0.png">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>MGS 6</h3>
+                    <img alt="" src="https://www.goclecd.fr/wp-content/uploads/buy-metal-gear-solid-6-cd-key-compare-prices-4.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>LOTR : Gollum</h3>
+                    <img alt="" src="https://image.api.playstation.com/vulcan/ap/rnd/202207/0608/NnJChovgHkrGDzvwWMq22ZE3.png">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Goat Simulator</h3>
+                    <img alt="" src="https://cdn1.epicgames.com/offer/50bbaf85f4454b1c88786efeede5b302/EGS_GoatSimulator3_CoffeeStainNorthAB_S1_2560x1440-36e3f3b71ecbcfa3e74ca774d43afdfc">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Lawn Mowing Simulator</h3>
+                    <img alt="" src="https://gaming-cdn.com/images/products/8565/orig/lawn-mowing-simulator-pc-jeu-steam-europe-cover.jpg?v=1652775090">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Resident Evil 4</h3>
+                    <img alt="" src="https://image.jeuxvideo.com/medias-sm/167871/1678711307-842-jaquette-avant.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>God of War 4</h3>
+                    <img alt="" src="https://image.api.playstation.com/vulcan/img/rnd/202010/2217/LsaRVLF2IU2L1FNtu9d3MKLq.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Minecraft</h3>
+                    <img alt="" src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_Minecraft.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Portal 2</h3>
+                    <img alt="" src="https://steamuserimages-a.akamaihd.net/ugc/2004702731858716219/A06C70826FB5B6F90C5D9C9FD9B80699FD1A52A9/">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Diablo IV</h3>
+                    <img alt="" src="https://cdn-uploads.gameblog.fr/img/news/419891_64186be74d8d6.jpg">   
+                </a>                      
+            </div>
+            <div class="slide">
+                <a href="">
+                    <h3>Dead Island 4</h3>
+                    <img alt="" src="https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/6LdrZGL52ERyyE6PAsQRuvjW.jpg">   
+                </a>                      
+            </div>
+
+            
+        </div>
+        <div class="fleches">
+            <div id="fleche_gauche">
+                <input type="checkbox" id="input_fleche_gauche" checked>
+                <img alt="" src="../../assets/fleches.png">
+            </div>
+            <div id="fleche_droite">
+                <input type="checkbox" id="input_fleche_droite" checked>
+                <img alt="" src="../../assets/fleches.png">
+            </div>                
+        </div>
+    </div>
+        
+
+    
+
     <div id="footer"></div>
 </body>
 </html>

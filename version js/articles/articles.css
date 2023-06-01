@@ -1,0 +1,170 @@
+/* Désactivation des actus et de la bannière sur portable */
+#jeux_attendus, #img_banniere {
+    display: none;
+}
+
+/* Ajustement du titre de l'article */
+#corps h1 {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: #ebebeb;
+    transition: color 0.3s linear;
+}
+
+/* Ajout de la transition au survol du titre */
+#corps h1:hover {
+    color: #eb5a23;
+}
+
+/* Placement et ajustement du cadre de l'article */
+#corps {
+    background-color: #2E2D2D;
+    border-top: 3px solid #1e1e1e;
+    border-bottom: 3px solid #eb5a23;
+    border-radius: 5%;
+    margin-right: 2.5%;
+}
+
+/* Placement et ajustement du premier paragraphe et de l'image */
+#imageetpara {
+    font-family: Arial;
+    font-size: 20px;
+    text-indent: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    text-align: justify;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    justify-items: center;
+}
+
+/* Ajustement de l'image */
+#imageetpara img {
+    width: 80%;
+    border: 1px solid #eb5a23;
+    margin-left: 3%;
+}
+
+/* Ajustement du second paragraphe */
+#seconde_partie {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: Arial;
+    font-size: 15px;
+    text-indent: 50px;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    text-align: justify;
+}
+
+/* Positionnement de la note sur portable */
+#note {
+    width: fit-content;
+    position: relative;
+    right: -80%;
+}
+
+/* Ajutement du contenu de la note */
+#note p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+    width: 50px;
+    border: 5px solid #eb5a23;
+    background-color: #eb5a23;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Ajustement des bords de l'article dans sa globalité */
+#total {
+    border-top: 3px solid #eb5a23 ;
+    border-radius: 5%;
+    padding-top: 3%;
+}
+
+/* Ajout d'un padding sous le header */
+#header {
+    padding-bottom: 3%;
+}
+
+
+/* Adaptabilité pour les ordinateurs (>1080p) */
+@media only screen and (min-width:1080px) {
+    #corps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    #imageetpara {
+        text-indent: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 35px;
+    }
+
+    #imageetpara img {
+        max-width: 400px;
+        max-height: 400px;
+        margin-right: 3%;
+    }
+
+    #imageetpara p {
+        margin-right: 3%;
+    }
+
+    #total {
+        font-family: Arial;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #seconde_partie {
+        font-family: Arial;
+        text-indent: 50px;
+        text-align: justify;
+        font-size: 26px;
+        margin: 3%;
+    }
+
+    /* Activation de la bannière sur PC et ajustements */
+    #img_banniere {
+        border: 2px solid #eb5a23;
+        width: 94%;
+        height: 300px;
+        margin: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Activation des actus sur PC */
+    #jeux_attendus{
+        display: block;
+    }
+
+    /* Déplacement de la note sur PC */
+    #note {
+        position: absolute;
+        top: 31.6%;
+        left: 67%;
+    }
+} 
