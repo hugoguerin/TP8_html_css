@@ -32,9 +32,12 @@ text-align : center;
 padding-left : 5px;
 }
 
+<<<<<<< Updated upstream
 #header #connexion{
     color: #eb5a23;
   }
+=======
+>>>>>>> Stashed changes
 
 
 @media screen and (max-width:1365px)
