@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="accueil.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../jeux_attendus/jeux_attendus.css">
     <title>Accueil</title>
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -16,18 +18,49 @@
     <script> 
         $(function(){
         $("#header").load("../header/header.html"); 
-        $("#footer").load("../footer/footer.html"); 
+        $("#footer").load("../footer/footer.html");
+        $("#jeux_attendus").load("../jeux_attendus/jeux_attendus.html"); 
         });
+      
+        
     </script> 
     
 </head>
 <body>
     <div id="header"></div>
+    <h1>Actualités à la une</h1>
+    <div id="main">
+        <div id="accueil">
+            <div>
+                <h2>
+                    Sword of the Sea : des paysages ondoyants dans le nouveau jeu des créateurs d'Abzû, exclu PS5</h2>
+                <img src="https://i.jeuxactus.com/datas/jeux/s/w/sword-of-the-sea/vn/sword-of-the-sea-6470b5ac0d52b.jpg" alt="swordofthesea">
+                <p class="debutarticle">Si vous avez été séduit par la patte artistique de NEVA, le nouveau titre de Nomada Studio, les créateurs de GRIS, alors vous risquez de tomber amoureux de Sword of the Sea.</p> 
+                <p class="suite">Lire la suite</p>
+            </div>
+            <div>
+                <h2>Ghostrunner 2 : une première vidéo (avec du gameplay) deux ans après son annonce</h2>
+                <img src="https://i.jeuxactus.com/datas/jeux/g/h/ghostrunner-2/vn/ghostrunner-2-646f70750e3fe.jpg" alt="ghostrunner2">
+                <p class="debutarticle">Deux ans après son annonce, Ghostrunner 2 révèle enfin ses premières images de gameplay, et c'est au PlayStation Showcase du 24 mai 2023 que le studio One More Level a décidé de faire du bruit.</p>
+                <p class="suite">Lire la suite</p>
+            </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere quas saepe. Soluta consequuntur quibusdam cumque reprehenderit cupiditate asperiores animi voluptate ipsam saepe tenetur ullam assumenda corrupti quasi, voluptas nesciunt.</p>
+            <div>
+                <h2><a href="../articles/articles.html">Warhammer 40.000 Space Marine 2 : du combat gameplay bien énervé, il y a une vibe "Gears of War"</a></h2>
+                <img src="https://i.jeuxactus.com/datas/jeux/w/a/warhammer-40000-space-marine-2/vn/warhammer-40000-space-ma-639655724549c.jpg" alt="warhammer">
+                <p class="debutarticle">Depuis décembre dernier et les Game Awards 2022, Warhammer 40.000 Space Marine 2 s'était fait discret. On a bien eu des informations sur la belle édition collector, mais rien de bien concret à se mettre sous la dent.
+                </p>
+                <p class="suite"><a href="../articles/articles.html">Lire la suite</a></p>
+            </div>
+        </div>
 
+        <div id="jeux_attendus">
+
+        </div>
+    </div>   
 
 
     <div id="footer"></div>
+
 </body>
 </html>

@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* background-image: radial-gradient(circle at center,#1e1e1e 80%, rgb(235, 90, 35, 0.2)) */
+
+}
+
+#main{
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#accueil div{
+   height: 250px;
+   width: 100%;
+   margin-top: 10px;
+   background-color: #2e2d2d;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 5fr 1fr;
+   border-bottom: 2px solid #eb5a23;
+   border-radius: 2%;
+   padding: 10px;
+   }
+
+
+h1{
+    margin-left: 10%;
+    margin-top: 10px;
+    text-decoration-line: underline;
+}
+
+#accueil div h2{
+    grid-column: 1 /span 3;
+    grid-row: 1;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#accueil div h2:hover, #main div .suite:hover{
+    scale: 1.05;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+#accueil div img{
+    grid-row: 2 /span 2;
+    grid-column: 1 /span 2;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 2%;
+    margin: auto;
+}
+
+#accueil div .debutarticle {
+    grid-column: 3;
+    grid-row: 2;
+    max-width: 90%;
+    background: linear-gradient(rgba(230, 230, 230, 1) 30%, rgba(230, 230, 230, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    padding: 5%;
+}
+
+#accueil div .suite{
+    grid-column: 3;
+    grid-row: 3;
+    width: 90%;
+    padding: 5%;
+    text-align: right;
+}
+
+#header #accueil{
+    color: #eb5a23;
+}
+
+#jeux_attendus{
+    display: none;
+}
+
+@media  all and (min-width: 1080px) {
+  
+    #accueil div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        width: 100%;
+    }
+
+    #accueil div h2{
+        grid-column: 2 /span 2;
+        grid-row: 1;
+    }
+
+    #accueil div img{
+        grid-row: 1 /span 3;
+        grid-column: 1;
+        object-fit: cover;    
+        min-height: 90%;  
+    }
+
+    #accueil div .debutarticle {
+        grid-column: 2 /span 2;
+        grid-row: 2;
+        padding-left: 0;
+    }
+
+    #accueil{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main #jeux_attendus{
+        width: 25%;
+        height: fit-content;
+    }
+
+    #main #jeux_attendus h3{
+        width: 100%;
+    }
+
+    #main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #jeux_attendus{
+        opacity: 1;
+        display: block;
+    }
+}
