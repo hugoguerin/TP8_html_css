@@ -15,22 +15,22 @@ legend{
 
 .article{
     background-color: #101010;
-    height: 7.5em;
+    height: 10em;
     margin-top: 1em;
     display: flex; 
     justify-content: space-between;
     align-items: center;
 }
 .article img{
-    width: 5em;
-    height: 7.5em;
+    width: 7.5em;
+    height: 10em;
     object-fit: cover; 
 }
 .article h2{
     color: #eb5a23;
     margin-top: 0.5em;
     margin-left: 0.5em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
 }
 .align_verti{
     margin: 0 0.5em 0 0.5em;
@@ -40,14 +40,16 @@ legend{
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 6;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden; 
     text-align: justify;
 }
 
-
+#news_semaines h2, #news_semaines legend{
+    font-size: 100%;
+}
 
 #autres_news{
     margin-top: 2em;
@@ -69,11 +71,11 @@ legend{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-250%);
+        transform: translateX(-175%);
     }
 }
 #autres_news .slide{
-    animation: slide 20s infinite linear alternate;
+    animation: slide 15s infinite linear alternate;
 }
 
 #autres_news h3{
@@ -122,12 +124,44 @@ legend{
     }
     #jeux_attendus{
         display: block;
-        background-color: #101010;
-        width: 25%;
-        margin: 1em 1em 1em 0.5em;
+        margin: 1em 5em 1em 0.5em;
     }
     #news_semaines{
         width: 75%;
+        margin-left: 5em;
+    }
+    #jeux_attendus_images div{       
+        text-align: center; 
+        margin: 1em;
+    }
+    #jeux_attendus_images img{
+        width: 12em;
+        height: 7.5em;
+        margin: 1em 1em 0em 1em;    
+        padding: 0;    
+    }
+    #jeux_attendus_images p{
+        padding:0;
+        margin: 0.25em 0em 0.25em 0em;
+     }
+    
+    /* #jeux_attendus_images{
+        min-width: 15em;
+    }
+    #jeux_attendus_images div{
+        width: 10em;
+        text-align: center;
+        padding: 1em;
+        padding-bottom: 0.5em;
+    }
+    #jeux_attendus_images img{
+        width: 10em;
+        height: 7.5em;
+        margin: 0;        
     }
     
+    #jeux_attendus_images p{
+        padding:0;
+        margin-top: 0.25em;
+     } */
 }
